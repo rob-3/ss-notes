@@ -15,3 +15,15 @@ Decoder: takes code and decides which instruction to execute
       1. Load MDR into IR
       1. Load IR.OP into the decoder
    2. Execute: instruction is executed
+
+FETCH: 00 "hidden instruction"
+LOAD: 
+1. IR.address -> MAR
+1. MEM[MAR] -> MDR
+1. MDR -> A
+1. 00 -> DECODER
+ADD: 
+TODO
+STORE: 
+TODO
+HALT: immediately stops execution
